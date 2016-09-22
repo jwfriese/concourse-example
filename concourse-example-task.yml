@@ -2,6 +2,8 @@ platform: linux
 image_resource:
   type: docker-image
   source: {repository: golang}
+inputs:
+  - name: concourse-example
 run:
   path: go
   args: ["run", "concourse-example/main.go"]
