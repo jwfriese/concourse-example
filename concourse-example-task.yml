@@ -4,6 +4,7 @@ image_resource:
   source: {repository: golang}
 inputs:
   - name: concourse-example
+    path: ./
 run:
   path: go
   args: ["run", "concourse-example/main.go"]
